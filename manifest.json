@@ -3,10 +3,7 @@
   "name": "Anti-Phishing Extension",
   "version": "1.0",
   "description": "Warns users about phishing websites",
-  "permissions": ["tabs", "webNavigation", "storage"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "permissions": ["tabs", "storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
@@ -15,5 +12,8 @@
       "48": "icon.png",
       "128": "icon.png"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }
